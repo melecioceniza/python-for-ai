@@ -55,3 +55,66 @@ Download VS Code
 5.) Click “Next” and “Install”
 
 6.) Click “Finish” when done
+
+## Install Pyhon Extension
+
+VS Code needs the Python extension to work properly with Python files:
+
+1.) Click the Extensions icon in the left sidebar (it looks like 4 squares)
+
+2.) Search for “Python”
+
+3.) Find the one by Microsoft (it has millions of downloads)
+
+4.) Click “Install”
+
+5.) Wait for installation to complete
+
+## Configure Python Execution
+After installing the Python extension, enable this important setting:
+
+1.) Open Settings (Ctrl/Cmd + ,)
+
+2.) Search for “Python Terminal Execute In File Dir”
+
+3.) Check the box to enable it
+
+What this does: When you run a Python file, VS Code will execute it from the file’s directory instead of your workspace root.
+
+**Recommend** : This prevents common path-related errors. For example, if your script reads a file with open('data.csv'), it will look for the file in the same folder as your script, which is usually what you want. Without this setting, it would look in your project root instead, causing “file not found” errors.
+
+### Additional recommended extensions
+While VS Code works great with just the Python extension, here are a few more I recommend:
+​
+#### Pylance
+    - Search for “Pylance” by Microsoft
+    - Provides even better code completion and error detection
+    - Works alongside the Python extension
+​
+#### Jupyter
+    - Search for “Jupyter” by Microsoft
+    - Enables interactive Python mode (we’ll use this later)
+    - Essential for data science and AI work
+
+#### Black Formatter
+
+Integrated formatting: Once this extension is installed in VS Code, Black will be automatically available as a formatter for Python. This is because the extension ships with a Black binary. You can ensure VS Code uses Black by default for all your Python files by setting the following in your User settings (View > Command Palette... and run Preferences: Open User Settings (JSON)):
+
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter"
+  }
+Format on save: Automatically format your Python files on save by setting the editor.formatOnSave setting to true and the editor.defaultFormatter setting to ms-python.black-formatter. You can also enable format on save for Python files only by adding the following to your settings:
+
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.formatOnSave": true
+  }
+Customize Black: You can customize the behavior of Black by setting the black-formatter.args setting.
+
+Keyboard Shortcuts: The code formatting is available in Visual Studio Code through the following keyboard shortcuts:
+
+On Windows: Shift + Alt + F
+On Mac: Shift + Option + F
+On Linux: Ctrl + Shift + I
+
+    pip install --user black
