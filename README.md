@@ -1,6 +1,11 @@
 
+# Pyhton Development with AI
 
-# Getting Started
+Learn Python from scratch and start building real AI applications. This is the fastest, beginner-friendly for Python and AI development.
+
+This takes you from zero to confidently building Python projects for AI. No prior experience needed.
+
+## Getting Started
 
 Setup Python development environment.
 
@@ -254,5 +259,5 @@ Run selected code
 Highlight any code
         
         Press Shift + Enter
-        
+
 Only that selection runs
