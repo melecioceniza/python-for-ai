@@ -1,0 +1,15 @@
+#Ternary expression, also known as the conditional expression, is a concise way to write an "if-else" statement in a single line of code. It allows you to evaluate a condition and return one of two values based on whether the condition is true or false. The syntax of a ternary expression in Python is as follows:
+# value_if_true if condition else value_if_false  
+# Here is an example of using a ternary expression to determine if a number is even or odd:
+number = 10 
+result = "Even" if number % 2 == 0 else "Odd"
+print(result)  # Output: Even   
+# In this example, the condition `number % 2 == 0` checks if the number is even. If the condition is true, the expression returns "Even"; otherwise, it returns "Odd". The result is then printed to the console.
+# Ternary expressions can also be nested to evaluate multiple conditions. Here is an example of using nested ternary expressions to determine if a number is positive, negative, or zero:
+number = -5 
+result = "Positive" if number > 0 else "Negative" if number < 0 else "Zero"
+print(result)  # Output: Negative   
+# In this example, the first condition checks if the number is greater than 0. If it is true, it returns "Positive". If it is false, it evaluates the second condition to check if the number is less than 0. If that condition is true, it returns "Negative". If both conditions are false, it returns "Zero". The result is then printed to the console.
+# Ternary expressions are a powerful tool for writing concise and readable code in Python. They are especially useful when you want to assign a value to a variable based on a condition without needing to write a full "if-else" statement. However, it's important to use ternary expressions judiciously, as overly complex or nested ternary expressions can make your code harder to read and understand. Always consider the readability of your code when using ternary expressions, and use them in situations where they enhance clarity and conciseness.
+# Note: When using ternary expressions, be mindful of the data types of the values being returned, as this can affect the behavior of your code. Additionally, be aware of operator precedence when using ternary expressions in complex expressions, and consider using parentheses to ensure that your expressions are evaluated in the intended order. Always test your code to ensure that it behaves as expected when using ternary expressions.
+# In conclusion, ternary expressions are a concise way to write "if-else" statements in a single line of code. They allow you to evaluate a condition and return one of two values based on whether the condition is true or false. By using ternary expressions effectively, you can write more concise and readable code in Python. Always consider the readability of your code when using ternary expressions, and use them in situations where they enhance clarity and conciseness. Additionally, be mindful of data types and operator precedence when using ternary expressions to ensure that your code behaves as expected.   
